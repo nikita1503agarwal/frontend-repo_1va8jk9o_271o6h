@@ -2,6 +2,8 @@ import ProductGallery from './components/ProductGallery'
 import ProductInfo from './components/ProductInfo'
 import ProductDetails from './components/ProductDetails'
 import Recommendations from './components/Recommendations'
+import ParallaxHero from './components/ParallaxHero'
+import ThreeShowcase from './components/ThreeShowcase'
 
 function App() {
   return (
@@ -23,10 +25,17 @@ function App() {
       </header>
 
       <main className="mx-auto max-w-6xl px-6 py-10">
+        <section className="mb-10">
+          <ParallaxHero />
+        </section>
         <div className="grid gap-10 md:grid-cols-2">
           <ProductGallery />
           <ProductInfo />
         </div>
+
+        <section className="mt-12">
+          <ThreeShowcase />
+        </section>
 
         <section className="mt-12">
           <ProductDetails />
